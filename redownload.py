@@ -1,7 +1,8 @@
-import csv, os, sys, subprocess, time, shutil, pyautogui, pillow, PySimpleGUI as sg
+import csv, os, sys, subprocess, time, shutil, pyautogui, PySimpleGUI as sg
 from datetime import datetime
 from datetime import timedelta
 from colorama import init
+from PIL import ImageTk, Image
 init()
 from colorama import Fore, Back
 from os import system
