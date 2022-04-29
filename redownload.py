@@ -60,7 +60,7 @@ def update_script():
         pyautogui.click(1900, 10)
     if cals == True:
         time.sleep(5)
-        os.startfile("C:\Program Files\Google\Chrome\Application\chrome.exe")
+        subprocess.call(["C:\Program Files\Google\Chrome\Application\chrome.exe", "/max"])
         time.sleep(5)
         pyautogui.tripleClick(search)
         pyautogui.typewrite("cash.app")
