@@ -45,7 +45,7 @@ cal_login = (1822,119)
 def update_script():
     if dals == True:
         time.sleep(5)
-        subprocess.call(["C:\Program Files\Google\Chrome\Application\chrome.exe", "/max"])
+        subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
         time.sleep(5)
         pyautogui.tripleClick(search_dalton[0],search_dalton[1])
         pyautogui.typewrite("cash.app")
@@ -60,7 +60,7 @@ def update_script():
         pyautogui.click(1900, 10)
     if cals == True:
         time.sleep(5)
-        subprocess.call(["C:\Program Files\Google\Chrome\Application\chrome.exe", "/max"])
+        subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
         time.sleep(5)
         pyautogui.tripleClick(search)
         pyautogui.typewrite("cash.app")
