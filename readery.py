@@ -146,4 +146,4 @@ if flag == 0:
             print("\n")
             flag = 1
     except:
-        print("doesn't work apparently -PLACEHOLDER-")
+        print("there is either a bug occurring, or you have not specified a length of time at the top! (:")
