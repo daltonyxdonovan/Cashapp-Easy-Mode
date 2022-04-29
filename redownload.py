@@ -46,6 +46,7 @@ def update_script():
     if dals == True:
         time.sleep(5)
         subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
+        pyautogui.getWindowsWithTitle("New Tab")[0].maximize()
         time.sleep(5)
         pyautogui.tripleClick(search_dalton[0],search_dalton[1])
         pyautogui.typewrite("cash.app")
@@ -61,6 +62,7 @@ def update_script():
     if cals == True:
         time.sleep(5)
         subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
+        pyautogui.getWindowsWithTitle("New Tab")[0].maximize()
         time.sleep(5)
         pyautogui.tripleClick(search)
         pyautogui.typewrite("cash.app")
