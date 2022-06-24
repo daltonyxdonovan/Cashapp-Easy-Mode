@@ -13,8 +13,8 @@ alert = False
 menu = True
 updating = False
 backdate = False
-cals = False
-dals = True
+cals = True
+dals = False
 
 login = "login.png"
 now = datetime.now()
@@ -44,7 +44,7 @@ cal_statement = (2512,103)
 cal_login = (1822,119)
 def update_script():
     if dals == True:
-        time.sleep(5)
+        time.sleep(15)
         subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
         pyautogui.getWindowsWithTitle("New Tab")[0].maximize()
         time.sleep(5)
@@ -61,8 +61,9 @@ def update_script():
         pyautogui.click(1900, 10)
     if cals == True:
         time.sleep(5)
-        subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
-        pyautogui.getWindowsWithTitle("New Tab")[0].maximize()
+        #subprocess.call(["C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe", "/max"])
+        pyautogui.doubleClick(30,1350)
+        pyautogui.getWindowsWithTitle("New Tab").maximize()
         time.sleep(5)
         pyautogui.tripleClick(search)
         pyautogui.typewrite("cash.app")
